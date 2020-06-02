@@ -19,19 +19,14 @@ def linear_regression(x, y):
     return np.linalg.solve(A, b)
 
 #original data
-dp = [-77.50, -74.67, -71.15, -66.77, -61.40, -54.80]
-t = [298, 303, 308, 313, 318, 323]
+dp = np.array([-77.50, -74.67, -71.15, -66.77, -61.40, -54.80])
+t = np.array([298, 303, 308, 313, 318, 323])
 dp_0 = -85.24
-p_0 = 90.24
-p = list(dp)
-ln_p = list(dp)
-for i in range(len(dp)):
-    p[i] = float('%.2f' % (dp[i] - dp_0))
-#print("p*=",p)
-for i in range(len(dp)):
-    ln_p[i] = float('%.2f' % math.log(float(p[i])))
-    t[i] = 1/float(t[i])
-#print("lnp=",ln_p,"\n1/t=",t)
+p =dp - dp_0
+print("p=",p)
+ln_p = np.log(p)
+t = 1/t
+print("lnp=",ln_p,"\n1/t=",t)
 
 #linear regression
 X = np.array(t)
@@ -64,4 +59,5 @@ plt.annotate('('+'%.5f'%((math.log(101.325)-b)/k)+', '+'%.2f'%math.log(101.325)+
              xy = ((math.log(101.325)-b)/k+0.00001, math.log(101.325)+0.1),
              fontsize = 12)
 plt.legend(fontsize=14)
+
 plt.show()
