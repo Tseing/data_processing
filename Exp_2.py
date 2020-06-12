@@ -40,7 +40,7 @@ config = {
     "font.family":'serif',
     "mathtext.fontset":'stix',
     "font.serif": ['SimSun'],
-    'figure.dpi':'130',
+    'figure.dpi':'140',
 }
 rcParams.update(config)
 
