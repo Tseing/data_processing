@@ -1,8 +1,8 @@
 # Data Processing
 ### python science calculate with:
-- matplotlib
-- numpy
-- scipy
+- [Matplotlib](https://matplotlib.org/)（[中文](https://www.matplotlib.org.cn/)）
+- [Numpy](https://numpy.org/)（[中文]()）
+- [Scipy](https://docs.scipy.org/doc/scipy/reference/)
 ## Figures
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp2.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp3_0.png)
