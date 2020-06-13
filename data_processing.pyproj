@@ -5,7 +5,7 @@
     <ProjectGuid>e617e291-311e-494a-880e-20f267746160</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Exp_3.py</StartupFile>
+    <StartupFile>Exp7_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,11 +22,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Exp_2.py" />
-    <Compile Include="Exp_3.py">
+    <Compile Include="Exp7_0.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Exp_5.py">
+    <Compile Include="Exp2.py" />
+    <Compile Include="Exp3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp5.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp7_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp7_data.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
