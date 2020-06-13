@@ -31,14 +31,14 @@ plt.ylabel(r'$\kappa_{t}\mathrm{/\mu S\cdot cm^{-1}}$', fontsize=14)
 
 
 line_x1 = [0.15, 0.5]
-#plt.scatter(k_1, kt_1, label='measuring data')
-#plt.plot(line_x1, fit_1(line_x1), c='r', label='$y=1072x+1004$')
-#print(k_1, kt_1)
+plt.scatter(k_1, kt_1, label='measuring data')
+plt.plot(line_x1, fit_1(line_x1), c='r', label='$y=1072x+1004$')
+print(k_1, kt_1)
 
 line_x2 = [0.175, 0.3]
-plt.scatter(k_2, kt_2, label='measuring data')
-plt.plot(line_x2, fit_2(line_x2), c='r', label='$y=2945x+546.8$')
-print(k_2, kt_2)
+#plt.scatter(k_2, kt_2, label='measuring data')
+#plt.plot(line_x2, fit_2(line_x2), c='r', label='$y=2945x+546.8$')
+#print(k_2, kt_2)
 
 plt.legend(fontsize=14, loc='lower right')
 
