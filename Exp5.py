@@ -43,20 +43,20 @@ tem_2 = np.append(np.append(etem_2, htem_2), dtem_2)
 htem_2 = np.append(etem_2[4],htem_2)
 
 #sample_1
-efit = np.poly1d(np.polyfit(et, etem_1, 1))
-print("environment func = " ,efit)
-dfit = np.poly1d(np.polyfit(dt, dtem_1, 1))
-print("dissipation func = ",dfit)
-hfit = np.poly1d(np.polyfit(ht, htem_1, 10))
-print("heat func = ",hfit)
+#efit = np.poly1d(np.polyfit(et, etem_1, 1))
+#print("environment func = " ,efit)
+#dfit = np.poly1d(np.polyfit(dt, dtem_1, 1))
+#print("dissipation func = ",dfit)
+#hfit = np.poly1d(np.polyfit(ht, htem_1, 10))
+#print("heat func = ",hfit)
 
 #sample_2
-#efit = np.poly1d(np.polyfit(et, etem_2, 1))
-#print("environment func = " ,efit)
-#dfit = np.poly1d(np.polyfit(dt, dtem_2, 1))
-#print("dissipation func = ",dfit)
-#hfit = np.poly1d(np.polyfit(ht, htem_2, 10))
-#print("heat func = ",hfit)
+efit = np.poly1d(np.polyfit(et, etem_2, 1))
+print("environment func = " ,efit)
+dfit = np.poly1d(np.polyfit(dt, dtem_2, 1))
+print("dissipation func = ",dfit)
+hfit = np.poly1d(np.polyfit(ht, htem_2, 10))
+print("heat func = ",hfit)
 
 line_x = [0,20]
 
@@ -66,24 +66,24 @@ plt.plot(line_x, efit(line_x), c='royalblue')
 plt.plot(line_x, dfit(line_x), c='royalblue')
 plt.axhline(y=1.0, ls="--", linewidth=1)
 plt.xlabel(r'$\mathrm{Time/s}$', fontsize=14)
-plt.ylabel(r'$\Delta T\mathrm{/K}$', fontsize=14)
+plt.ylabel(r'$T\mathrm{/K}$', fontsize=14)
 
 
 #sample_1
-plt.scatter(t, tem_1, c='tomato', marker='o')
-plt.axvline(x=6.64336, ls="--", linewidth=1)
-plt.scatter(x=6.64336, y=1.0, marker='x', c='darkorange')
-plt.scatter([6.64336, 6.64336],[0.01824, 1.47423], marker='D', c='r')
-plt.annotate('(6.6434, 0.0182)',xy=(6.76, 0.06),fontsize = 12)
-plt.annotate('(6.6434, 1.4742)',xy=(1.39, 1.36),fontsize = 12)
+#plt.scatter(t, tem_1, c='tomato', marker='o')
+#plt.axvline(x=6.64336, ls="--", linewidth=1)
+#plt.scatter(x=6.64336, y=1.0, marker='x', c='darkorange')
+#plt.scatter([6.64336, 6.64336],[0.01824, 1.47423], marker='D', c='r')
+#plt.annotate('(6.6434, 0.0182)',xy=(6.76, 0.06),fontsize = 12)
+#plt.annotate('(6.6434, 1.4742)',xy=(1.39, 1.36),fontsize = 12)
 
 
 #sample_2
-#plt.scatter(t, tem_2, c='tomato', marker='o')
-#plt.axvline(x=6.39725, ls="--", linewidth=1)
-#plt.scatter(x=6.39725, y=1.0, marker='x', c='darkorange')
-#plt.scatter([6.39725, 6.39725],[0.04778, 1.70379], marker='D', c='r')
-#plt.annotate('(6.3973, 0.0478)',xy=(6.69, 0.12),fontsize = 12)
-#plt.annotate('(6.3973, 1.7038)',xy=(1.25, 1.57),fontsize = 12)
+plt.scatter(t, tem_2, c='tomato', marker='o')
+plt.axvline(x=6.39725, ls="--", linewidth=1)
+plt.scatter(x=6.39725, y=1.0, marker='x', c='darkorange')
+plt.scatter([6.39725, 6.39725],[0.04778, 1.70379], marker='D', c='r')
+plt.annotate('(6.3973, 0.0478)',xy=(6.69, 0.12),fontsize = 12)
+plt.annotate('(6.3973, 1.7038)',xy=(1.25, 1.57),fontsize = 12)
 
 plt.show()
