@@ -5,7 +5,7 @@
     <ProjectGuid>e617e291-311e-494a-880e-20f267746160</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Exp4_1.py</StartupFile>
+    <StartupFile>Exp6_cal.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -34,6 +34,18 @@
     <Compile Include="Exp4_data.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exp6_0.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp6_1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp6_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp6_data.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Exp7_0.py">
       <SubType>Code</SubType>
     </Compile>
@@ -54,6 +66,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Exp8.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp6_cal.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
