@@ -6,6 +6,8 @@
 ## Figures
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp2.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp3.png)
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp4_0.png)
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp4_1.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp5_0.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp5_1.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp7_0.png)
