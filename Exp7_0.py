@@ -17,7 +17,7 @@ plt.scatter(c, lquin, marker='^', label='solution sample')
 for i in range(len(lquin)):
     plt.annotate('(%.4f, %.4f)'%(c[i], lquin[i]), xy=(c[i], lquin[i]-0.0016))
 
-plt.plot(line_x, fit(line_x), c='r', label='$y=0.003012x+1.332$')
+plt.plot(line_x, fit(line_x), c='r', label='$n=0.003012c+1.332$')
 
 plt.legend(fontsize=14)
 plt.show()
