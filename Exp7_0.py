@@ -1,17 +1,7 @@
+import cfig
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
-from  Exp7_data import std, n, lquin, sol, c
-
-config = {
-    "font.family":'serif',
-    "mathtext.fontset":'stix',
-    "font.serif": ['SimSun'],
-    'figure.dpi':'140',
-}
-rcParams.update(config)
-plt.rcParams['font.serif'] = ['Times New Roman']
-
+from Exp7_data import std, n, lquin, sol, c
 
 fit = np.poly1d(np.polyfit(std, n, 1))
 print('func = ', fit)

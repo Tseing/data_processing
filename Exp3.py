@@ -1,15 +1,6 @@
+import cfig
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
-
-config = {
-    "font.family":'serif',
-    "mathtext.fontset":'stix',
-    "font.serif": ['SimSun'],
-    'figure.dpi':'140',
-}
-rcParams.update(config)
-plt.rcParams['font.serif'] = ['Times New Roman']
 
 k_01 = 1530
 k_02 = 1587
@@ -29,10 +20,10 @@ print(k_1)
 print(k_2)
 
 line_x = [0, 45]
-plt.scatter(t, k_1, label=r'$\mathrm{T=298.15K}$')
+plt.scatter(t, k_1, label=r'$T=298.15\mathrm{K}$')
 plt.plot(line_x, fit_1(line_x),
          label=r'$\frac{\kappa_0-\kappa_t}{\kappa_t-\kappa_\infty}=0.02036t+0.1131$')
-plt.scatter(t, k_2, label=r'$\mathrm{T=308.15K}$')
+plt.scatter(t, k_2, label=r'$T=308.15\mathrm{K}$')
 plt.plot(line_x, fit_2(line_x),
          label=r'$\frac{\kappa_0-\kappa_t}{\kappa_t-\kappa_\infty}=0.03733t+0.0911$')
 

@@ -1,16 +1,6 @@
+import cfig
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
-
-config = {
-    "font.family":'serif',
-    "mathtext.fontset":'stix',
-    "font.serif": ['SimSun'],
-    'figure.dpi':'140',
-}
-rcParams.update(config)
-plt.rcParams['font.serif'] = ['Times New Roman']
-
 
 et = np.array([1, 2, 3, 4, 5])
 ht = np.array([0.25, 0.50, 0.75, 1.00, 1.25, 1.50, 1.75, 2.00, 2.25, 2.50, 2.75,

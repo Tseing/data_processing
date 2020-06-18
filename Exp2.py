@@ -1,7 +1,7 @@
 import math
+import cfig
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import rcParams
 
 def linear_regression(x, y):
     """
@@ -36,21 +36,12 @@ _X = [0, 100]
 _Y = [b + k * x for x in _X ]
 #print(k,b)
 
-config = {
-    "font.family":'serif',
-    "mathtext.fontset":'stix',
-    "font.serif": ['SimSun'],
-    'figure.dpi':'140',
-}
-rcParams.update(config)
-
-plt.rcParams['font.serif'] = ['Times New Roman']
 plt.xlim(0.00285, 0.0034)
 plt.ylim(1.5, 5)
 plt.xticks(fontsize=10)
 plt.yticks(fontsize=10)
 plt.xlabel(r'$T^{-1}\mathrm{/K^{-1}}$', fontsize=14)
-plt.ylabel(r'$\ln p-\ln 10^3\mathrm{/\ln Pa}$', fontsize=14)
+plt.ylabel(r'$\ln p-\ln 10^3$', fontsize=14)
 plt.plot(_X, _Y, c='red', label=r'$y='+'%.4f'%(k)+'x'+'+%.4f'%(b)+'$')
 plt.scatter(t, ln_p, label='measuring data')
 plt.axhline(y=math.log(101.325), ls="--", linewidth=1)
