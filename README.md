@@ -16,3 +16,4 @@
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp7_0.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp7_1.png)
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp7_2.png)
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp8.png)
