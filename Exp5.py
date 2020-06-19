@@ -39,6 +39,8 @@ htem_2 = np.append(etem_2[4],htem_2)
 #print("dissipation func = ",dfit)
 #hfit = np.poly1d(np.polyfit(ht, htem_1, 10))
 #print("heat func = ",hfit)
+#mid_1 = (tem_1[0]+tem_1[len(tem_1)-1])/2
+#print("mid = ", mid_1)
 
 #sample_2
 efit = np.poly1d(np.polyfit(et, etem_2, 1))
@@ -47,33 +49,35 @@ dfit = np.poly1d(np.polyfit(dt, dtem_2, 1))
 print("dissipation func = ",dfit)
 hfit = np.poly1d(np.polyfit(ht, htem_2, 10))
 print("heat func = ",hfit)
+mid_2 = (tem_2[0]+tem_2[len(tem_2)-1])/2
+print("mid = ", mid_2)
 
 line_x = [0,20]
-
 
 plt.plot(ht, hfit(ht), c='royalblue')
 plt.plot(line_x, efit(line_x), c='royalblue')
 plt.plot(line_x, dfit(line_x), c='royalblue')
-plt.axhline(y=1.0, ls="--", linewidth=1)
 plt.xlabel(r'$\mathrm{Time/s}$', fontsize=14)
 plt.ylabel(r'$T\mathrm{/K}$', fontsize=14)
 
 
 #sample_1
 #plt.scatter(t, tem_1, c='tomato', marker='o')
-#plt.axvline(x=6.64336, ls="--", linewidth=1)
-#plt.scatter(x=6.64336, y=1.0, marker='x', c='darkorange')
-#plt.scatter([6.64336, 6.64336],[0.01824, 1.47423], marker='D', c='r')
-#plt.annotate('(6.6434, 0.0182)',xy=(6.76, 0.06),fontsize = 12)
-#plt.annotate('(6.6434, 1.4742)',xy=(1.39, 1.36),fontsize = 12)
+#plt.axhline(y=mid_1, ls="--", linewidth=1)
+#plt.axvline(x=6.22053, ls="--", linewidth=1)
+#plt.scatter(x=6.22053, y=mid_1, marker='x', c='darkorange')
+#plt.scatter([6.22053, 6.22053],[efit(6.22053), dfit(6.22053)], marker='D', c='r')
+#plt.annotate('(6.2205, %.4f)'%efit(6.22053), xy=(6.76, 0.06),fontsize = 12)
+#plt.annotate('(6.2205, %.4f)'%dfit(6.22053), xy=(1.00, 1.36),fontsize = 12)
 
 
 #sample_2
 plt.scatter(t, tem_2, c='tomato', marker='o')
-plt.axvline(x=6.39725, ls="--", linewidth=1)
-plt.scatter(x=6.39725, y=1.0, marker='x', c='darkorange')
-plt.scatter([6.39725, 6.39725],[0.04778, 1.70379], marker='D', c='r')
-plt.annotate('(6.3973, 0.0478)',xy=(6.69, 0.12),fontsize = 12)
-plt.annotate('(6.3973, 1.7038)',xy=(1.25, 1.57),fontsize = 12)
+plt.axhline(y=mid_2, ls="--", linewidth=1)
+plt.axvline(x=6.2274, ls="--", linewidth=1)
+plt.scatter(x=6.2274, y=mid_2, marker='x', c='darkorange')
+plt.scatter([6.2274, 6.2274],[efit(6.2274), dfit(6.2274)], marker='D', c='r')
+plt.annotate('(6.2274, %.4f)'%efit(6.2274),xy=(6.50, 0.12),fontsize = 12)
+plt.annotate('(6.2274, %.4f)'%efit(6.2274),xy=(1.00, 1.57),fontsize = 12)
 
 plt.show()

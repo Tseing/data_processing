@@ -11,6 +11,8 @@ sp = r - 1
 
 rfit = np.poly1d(np.polyfit(c, np.log(r)/c, 1))
 spfit = np.poly1d(np.polyfit(c, sp/c, 1))
+print("r = ", r)
+print("sp = ", sp)
 print("rfit = ", rfit)
 print("spfit = ", spfit)
 line_x=[0,6.5]
