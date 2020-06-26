@@ -5,7 +5,7 @@
     <ProjectGuid>e617e291-311e-494a-880e-20f267746160</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Exp5.py</StartupFile>
+    <StartupFile>Exp9.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -69,6 +69,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Exp6_cal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exp9.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
