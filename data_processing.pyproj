@@ -5,7 +5,7 @@
     <ProjectGuid>e617e291-311e-494a-880e-20f267746160</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>Exp9.py</StartupFile>
+    <StartupFile>Exp10.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -25,6 +25,7 @@
     <Compile Include="cfig.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Exp10.py" />
     <Compile Include="Exp4_0.py">
       <SubType>Code</SubType>
     </Compile>
