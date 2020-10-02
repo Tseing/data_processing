@@ -37,3 +37,9 @@ Exp_9
 ![image](https://github.com/Tseing/data_processing/blob/master/images/exp10.png)
 Exp_10
 ----
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp11.png)
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp11_0.png)
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp11_1.png)
+![image](https://github.com/Tseing/data_processing/blob/master/images/exp11_2.png)
+Exp_11
+----
